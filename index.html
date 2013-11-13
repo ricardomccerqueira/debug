@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TRACE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">		
+        <script type="text/javascript" src="js/Debbug.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function simpleMath(a,b){
+                return {result:a + b,a:a,b:b};
+            }
+
+            function simpleMath2(a,b){
+                return  a * b;
+            }
+
+            function exampleLog(){
+                console.log(simpleMath(1,2), simpleMath2(2,2));
+            }
+
+            function exampleDebug(){
+                debug.log(simpleMath(1,2), simpleMath2(2,2));
+            }
+
+            function callExampleLog(){
+                exampleLog();
+            }
+
+            function callExampleDebug(){
+                exampleDebug();
+            }
+
+
+            exampleLog(); 
+            exampleDebug(); 
+
+            callExampleLog(); 
+            callExampleDebug();
+        </script>
+    </body>
+</html>
