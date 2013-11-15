@@ -3,6 +3,9 @@ Debug
 
 Small extra power to javascript debugging.
 
+It will simply rewrite console to provide a stacktrace and a timestamp to every log.
+It also has the ability to remove all logs at once, but use this with caution, as calling an empty function is still calling a function, and uses memory to do so.
+
 
 	
 			
